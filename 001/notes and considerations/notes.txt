@@ -1,0 +1,12 @@
+Notes and Considerations:
+PDF Text Extraction: The quality of text extraction from PDFs can vary greatly depending on the PDF's format and content. pdfplumber is generally effective but may need tweaking for specific cases.
+
+Text Cleaning: The provided cleaning function is quite basic. Depending on your data, you might need more sophisticated cleaning (e.g., handling unicode characters, specific symbol removal).
+
+Normalization and Feature Engineering: These are highly dependent on your specific use case and the nature of your data. The examples provided are starting points, but you should adjust them based on your model's requirements.
+
+Additional Dependencies: This setup requires external libraries like pdfplumber and scikit-learn. Make sure to include these in your requirements.txt.
+
+Error Handling: The current code lacks sophisticated error handling and logging. In a production setting, you would want to add appropriate try-except blocks, logging, and possibly alerting mechanisms for failures.
+
+Performance Considerations: If you're dealing with a large number of PDF files or very large files, you may need to consider parallel processing or batch processing techniques to improve performance.
